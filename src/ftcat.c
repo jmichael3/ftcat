@@ -10,6 +10,7 @@
 #define BUFFSIZE 150
 
 _Bool meets_complexity_requirements(char* line);
+void format_line(FILE* fp, unsigned int min_len, unsigned int max_len, char start_char, char end_char, _Bool check_is_complex, _Bool check_is_not_complex);
 
 char* USAGE = "Usage: ftcat [OPTION]... [FILE]...\n\
 format FILE(s) and print to standard output.\n\
